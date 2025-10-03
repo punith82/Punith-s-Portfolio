@@ -3,146 +3,187 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Punith's Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Punith Kumar Portfolio</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Devicons for skills -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
-      <nav class="navbar">
-        <h1 style="left: 0">Hello there,</h1>
-        <a id="about">About Me</a>
-        <a id="skills">Skills</a>
-        <a id="projects">Projects</a>
-        <a id="getintouch">Get in touch</a>
-      </nav>
-      <div class="intro">
-        <div>
-          <h2>
-            I'm <b style="color: rgb(211, 211, 193)"> Punith Kumar R</b> ,
-          </h2>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-brand">Punith Kumar R</div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="nav-links" id="nav-links">
+        <a href="#about-section">About Me</a>
+        <a href="#skills-section">Skills</a>
+        <a href="#projects-section">Projects</a>
+        <a href="#contact-section">Get in Touch</a>
+      </div>
+    </nav>
+
+    <!-- HERO / INTRO -->
+    <section class="intro">
+      <div class="intro-text">
+        <h1>I'm <span class="highlight">Punith Kumar R</span></h1>
+        <p>
+          A passionate full stack developer with expertise in HTML, CSS,
+          JavaScript, and React. I build responsive, modern web applications
+          combining design and functionality.
+        </p>
+        <a href="#projects-section" class="btn">View My Work</a>
+      </div>
+      <div class="intro-img">
+        <img src="./Punith.jpeg" alt="Punith Kumar" />
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about-section">
+      <h2>About Me</h2>
+      <p>
+        I’m Punith Kumar, an Electrical and Electronics Engineering student from
+        Mysore, actively learning full stack development with HTML, CSS,
+        JavaScript, and React. I enjoy solving problems, exploring new
+        technologies, and building practical projects for real-world impact.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills-section">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="devicon-html5-plain"></i>
+          <p>HTML5</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-css3-plain"></i>
+          <p>CSS3</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-javascript-plain"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-react-original"></i>
+          <p>React</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-tailwindcss-plain"></i>
+          <p>Tailwind</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-python-plain"></i>
+          <p>Python</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-git-plain"></i>
+          <p>Git</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-github-original"></i>
+          <p>GitHub</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-mysql-plain"></i>
+          <p>MySQL</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-mongodb-plain"></i>
+          <p>MongoDB</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects-section">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
           <p>
-            A driven full stack developer with expertise in modern web
-            technologies like HTML, CSS, JavaScript, and React. I specialize in
-            crafting seamless, responsive web experiences that combine design
-            and functionality. Constantly learning and embracing new challenges,
-            I aim to build solutions that make a real-world impact.
+            Personal portfolio built with HTML, CSS, JavaScript to showcase my
+            projects.
           </p>
-          <!-- <button>Let's get started ></button> -->
+          <a href="https://github.com/punith82" target="_blank">View Project</a>
         </div>
-        <div>
-          <img src="./WhatsApp Image 2025-09-15 at 20.21.51.jpeg" alt="" />
+        <div class="project-card">
+          <h3>To-Do List App</h3>
+          <p>
+            Responsive To-Do list with React, enabling task add/edit/delete
+            functionality.
+          </p>
+          <a href="#">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Weather App</h3>
+          <p>
+            Weather forecasting app using React and public API to show user
+            location weather.
+          </p>
+          <a href="#">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Quiz App</h3>
+          <p>
+            Quiz platform with multiple-choice questions and score tracking
+            using React & Tailwind.
+          </p>
+          <a href="#">View Project</a>
         </div>
       </div>
-      <div class="about" id = "about-section">
-        <h2>About Me</h2>
-        <p>
-          I’m Punith Kumar, an Electrical and Electronics Engineering student
-          from Mysore, with a keen interest in web development and programming.
-          Alongside my academic journey, I’m actively learning full stack
-          development with technologies like HTML, CSS, JavaScript, and React,
-          aiming to build practical and impactful projects. I’m passionate about
-          solving problems, exploring new technologies, and continuously
-          improving my skills to prepare for internship and career
-          opportunities. With a strong foundation in both engineering concepts
-          and software development, I’m eager to contribute to innovative
-          projects and grow as a developer in the tech industry.
-        </p>
-      </div>
-      <div class="skills" id="skills-section">
-        <h2>Technical Skills</h2>
-        <ul>
-          <li>Languages: HTML, CSS, JavaScript, Python</li>
-          <li>Frameworks & Libraries: React , Tailwind CSS</li>
-          <li>Version Control: Git, GitHub</li>
-          <li>Database: MySQL(learning), MongoDB(learning)</li>
-          <li>Tools: VS Code, Postman, Chrome DevTools</li>
-          <li>
-            Soft Skills: Problem-solving, teamwork, adaptability, communication
-          </li>
-        </ul>
-      </div>
-      <div class="projects" id="projects-section">
-        <h2>Projects</h2>
-        <ul>
-          <li>
-            <b>Portfolio Website:</b> <br />
-            <div class="details">
-              Developed a personal portfolio website using HTML, CSS, and
-              JavaScript to showcase my projects and skills. <br />GitHub Link :
-              <a href="https://github.com/punith82" target="_blank">
-                View Project</a
-              >
-            </div>
-          </li>
+    </section>
 
-          <li>
-            <b>To-Do List App:</b> <br />
-            <div class="details">
-              Created a responsive to-do list application with React, allowing
-              users to add, edit, and delete tasks.<br />
-              Github Link :<a href="">View Project</a>
-            </div>
-          </li>
-          <li>
-            <b>Weather App:</b> <br />
-            <div class="details">
-              Built a weather forecasting app using React and a public API to
-              display current weather conditions based on user location.<br />Github
-              Link :<a href="">View Project</a>
-            </div>
-          </li>
-          <li>
-            <b>Quiz App:</b> <br />
-            <div class="details">
-              Developed a simple quiz platform with React and tailwind CSS,
-              featuring multiple-choice questions and score tracking.<br />Github
-              Link :<a href="">View Project</a>
-            </div>
-          </li>
-        </ul>
+    <!-- CONTACT -->
+    <section class="contact" id="contact-section">
+      <h2>Get in Touch</h2>
+      <p>
+        If you’re interested in working together or have questions, feel free to
+        reach out!
+      </p>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+      <div class="social-links">
+        <a href="https://github.com/punith82" target="_blank"
+          ><i class="bi bi-github"></i
+        ></a>
+        <a
+          href="https://linkedin.com/in/punith-kumar-r-1ba48b326"
+          target="_blank"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+        <a href="mailto:punithkumar18a@gmail.com"
+          ><i class="bi bi-envelope"></i
+        ></a>
       </div>
-      <section class="contact" id="getintouch-section">
-        <h2>Get in Touch</h2>
-        <p>
-          If you’re interested in working together or have any questions, feel
-          free to send me a message!
-        </p>
-        <form>
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Your Message"></textarea>
-          <button type="submit" class="submit">Send</button>
-        </form>
-        <p>Or connect with me on:</p>
-        <ul class="social-links">
-          <li>
-            <a href="https://github.com/punith82" target="_blank"
-              ><i class="bi bi-github"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://linkedin.com/in/punith-kumar-r-1ba48b326"
-              target="_blank"
-              ><i class="bi bi-linkedin"></i
-            ></a>
-          </li>
-          <li>
-            <a href="mailto:your-email@example.com"></a>
-              <i class="bi bi-envelope"></i
-            ></a>
-          </li>
-        </ul>
-      </section>
+    </section>
 
-      <footer>
-        <p>&copy; 2025 Punith Kumar. All rights reserved.</p>
-      </footer>
-    </div>
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2025 Punith Kumar. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
